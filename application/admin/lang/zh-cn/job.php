@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'Id'               => 'ID',
+    'Company_images'   => '公司',
+    'Interview_images' => '面试',
+    'Dormitory_images' => '宿舍',
+    'Canteen_images'   => '食堂',
+    'Staff_images'     => '员工风采',
+    'Entry'            => '入职奖',
+    'Recommend'        => '推荐奖',
+    'Commission'       => '代理佣金',
+    'Salary'           => '薪资结算',
+    'Base_salary'      => '基本工资',
+    'Pay_salary'       => '薪资发放',
+    'Nature'           => '性质',
+    'Type'             => '类型',
+    'Number'           => '招聘人数',
+    'Requirement'      => '要求',
+    'Worktime'         => '工作时间',
+    'Welfare'          => '工作福利',
+    'Introduce'        => '公司介绍',
+    'Bonus'            => '奖金',
+    'State'            => '状态',
+    'State 1'          => '进行中',
+    'State 2'          => '已完成',
+    'Address'=>'地址',
+    'Location'=>'地址坐标',
+    'Company'=>'公司名称'
+];

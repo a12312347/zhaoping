@@ -1,0 +1,54 @@
+<form id="wxpayset-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">商户号</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-mch_id" data-rule="required" class="form-control" name="row[mch_id]" type="text" value="{$row.mch_id|htmlentities}">
+            <p class="help-block">*在微信支付商户平台可以查看商户号.</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">Api支付秘钥</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-apisecret" data-rule="required" class="form-control" name="row[apisecret]" type="text" value="{$row.apisecret|htmlentities}">
+            <p class="help-block">*注意Api秘钥是32位的</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">apiclient_cert.pem{if $apiclient_cert}<p style="color:red;">(已上传)</p>{/if}</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-apiclient_cert" data-rule="required" class="form-control " rows="5" name="row[apiclient_cert]" cols="50" placeholder="为保证安全性,不显示证书内容,请直接修改"></textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">apiclient_key.pem{if $apiclient_key}<p style="color:red;">(已上传)</p>{/if}</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-apiclient_key" data-rule="required" class="form-control " rows="5" name="row[apiclient_key]" cols="50" placeholder="为保证安全性,不显示证书内容,请直接修改"></textarea>
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">服务器ip</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ip" data-rule="required" class="form-control" name="row[ip]" type="text" value="{$row.ip|htmlentities}">
+            <p class="help-block">*服务器的ip</p>
+        </div>
+    </div>
+
+
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
